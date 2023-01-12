@@ -2,10 +2,12 @@
 
 github 地址：https://github.com/zhangyile/telegram-wechat.git
 
-
-efb项目的原理是这样的：
+efb项目的原理是这样的：  
 Telegram bot > EFB > 微信网页版 > 微信
 
+使用 itchat-uos 替换了 itchat
+* itchat-uos: https://github.com/why2lyj/ItChat-UOS
+* itchat: https://github.com/littlecodersh/ItChat
 
 ## 0. 环境依赖
 - 一个正常使用的 Telegram 账号
@@ -15,12 +17,12 @@ Telegram bot > EFB > 微信网页版 > 微信
 
 ## 1.  Telegram 上创建机器人并获取 Token 和 ID
 ### 1.1获取 Bot Token
-1.在 Telegram 里, 对 @botfather 说话: /newbot
-2.按照要求给 Bot 取名
-3.获取 Bot Token安全原因: Token 必须保密（这串token要记好，待会要用）
-4.允许 Bot 读取非指令信息，对 @botfather 说话: /setprivacy, 选择disable
-5.允许将 Bot 添加进群组，对 @botfather 说话: /setjoingroups, 选择enable
-6.允许 Bot 提供指令列表，对 @botfather 说话: /setcommands, 输入以下内容 （复制以下内容一次性发给botfather）
+1. 在 Telegram 里, 对 @botfather 说话: /newbot
+2. 按照要求给 Bot 取名
+3. 获取 Bot Token安全原因: Token 必须保密（这串token要记好，待会要用）
+4. 允许 Bot 读取非指令信息，对 @botfather 说话: /setprivacy, 选择disable
+5. 允许将 Bot 添加进群组，对 @botfather 说话: /setjoingroups, 选择enable
+6. 允许 Bot 提供指令列表，对 @botfather 说话: /setcommands, 输入以下内容 （复制以下内容一次性发给botfather）
 ```
 help - 显示命令列表.
 link - 将远程会话绑定到 Telegram 群组
@@ -84,6 +86,6 @@ docker compose logs -f
 
 
 ## 5. 参考链接
-https://specialhua.top/20190618/cid=4.html
-https://www.iszy.cc/posts/ehforwarderbot/
+- https://specialhua.top/20190618/cid=4.html
+- https://www.iszy.cc/posts/ehforwarderbot/
 
