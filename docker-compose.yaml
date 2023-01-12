@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  telegram-wechat:
+    #image: royx/docker-efb
+    image: hzzhangyile/docker-efb:0.0.1
+    restart: always
+    volumes: 
+      - ./eh_wechat_slave.py:/opt/ehForwarderBot/plugins/eh_wechat_slave.py
+      - ./config.py:/opt/ehForwarderBot/config.py
+      - ./tgdata.db:/opt/ehForwarderBot/plugins/eh_telegram_master/tgdata.db
